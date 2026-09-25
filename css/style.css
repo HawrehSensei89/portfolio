@@ -1,0 +1,43 @@
+/***************** Main Header styles  *****************/
+
+#header {
+    padding: 30px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#header .logo-wrapper {
+    display: flex;
+    gap: 6px;
+}
+
+/*************** navigation-list styles *********/
+
+#header .nav-list {
+    display: flex;
+    gap: 1rem;
+}
+
+#header .nav-link {
+    padding: 0 0.5rem;
+    color: #abb2bf;
+    transition: all 0.4s;
+}
+
+#header .nav-link .sharp-sign {
+    color: #c778dd;
+}
+
+/**** hover efect ****/
+
+#header .nav-link:hover {
+    color: white;
+}
+
+/****** active link *******/
+
+#header .active {
+    color: white;
+}
