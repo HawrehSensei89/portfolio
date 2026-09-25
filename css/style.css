@@ -58,21 +58,21 @@
 
 /*** left section styles ***/
 
-#hawreh-banner .left-section .banner-title{
+#hawreh-banner .left-section .banner-title {
     font-size: 2.4rem;
 }
 
-#hawreh-banner .left-section .banner-hilight{
+#hawreh-banner .left-section .banner-hilight {
     color: #c778dd;
 }
 
-#hawreh-banner .left-section .banner-text{
+#hawreh-banner .left-section .banner-text {
     margin: 2rem 0;
     color: #abb2bf;
     font-size: 1.2rem;
 }
 
-#hawreh-banner .left-section .banner-link{
+#hawreh-banner .left-section .banner-link {
     color: white;
     border: 1px solid #c778dd;
     padding: 8px 12px;
@@ -81,23 +81,23 @@
     transition: all 0.4s;
 
     &:hover {
-        background: rgba(199, 120, 221 , 0.2);
+        background: rgba(199, 120, 221, 0.2);
     }
 }
 
 /*** right section styles ***/
 
-#hawreh-banner .right-section{
+#hawreh-banner .right-section {
     position: relative;
 }
 
-#hawreh-banner .right-section .banner-img{
+#hawreh-banner .right-section .banner-img {
     width: 98%;
     height: 500px;
 
 }
 
-#hawreh-banner .right-section .banner-occupation{
+#hawreh-banner .right-section .banner-occupation {
     position: relative;
     background: #282c33;
     padding: 5px 30px;
@@ -105,7 +105,7 @@
     top: -25px;
     border: 1px solid #abb2bf;
     color: #999a9c;
-    
+
 }
 
 #hawreh-banner .right-section .banner-occupation .hilight {
@@ -113,12 +113,11 @@
 }
 
 
-#hawreh-banner .right-section .banner-shape{
+#hawreh-banner .right-section .banner-shape {
     position: absolute;
     top: 150px;
     right: 30px;
-    z-index: -1
-    ;
+    z-index: -1;
 }
 
 
@@ -129,25 +128,145 @@
     text-align: center;
 }
 
-#slogan-container .slogan-box{
+#slogan-container .slogan-box {
     display: inline-block;
     border: 1px solid #abb2bf;
     padding: 1.5rem 2rem;
     position: relative;
 }
 
-#slogan-container .slogan-box .quote{
+#slogan-container .slogan-box .quote {
     position: absolute;
     width: 35px;
 }
 
-#slogan-container .slogan-box .left-quote{
+#slogan-container .slogan-box .left-quote {
     top: -20px;
     left: 10px;
 }
 
 
-#slogan-container .slogan-box .right-quote{
+#slogan-container .slogan-box .right-quote {
     bottom: -10px;
     right: 10px;
 }
+
+
+/********** Project Section Styles ***********/
+
+#project-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+#project-container .title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+#project-container .title-box .title {
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+/*** purple line ***/
+
+#project-container .title-box .title::after {
+    content: "";
+    width: 400px;
+    height: 1px;
+    background: #c778dd;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 108%;
+
+}
+
+#project-container .title-box .title-hilight {
+    color: #c778dd;
+}
+
+#project-container .title-box .view-all {
+    transition: all 0.4s;
+}
+
+#project-container .title-box .view-all:hover {
+    color: #c778dd;
+}
+
+
+/***************** Project LIst *****************/
+
+#project-container .projects-list {
+    display: flex;
+    gap: 10px;
+}
+
+#project-container .projects-list .project-card {
+    border: 1px solid #abb2bf;
+
+}
+
+#project-container .projects-list .project-img {
+    width: 100%;
+    height: 200px;
+    /* aspect-ratio: 16/9; */
+    object-fit: cover;
+    display: block;
+}
+
+#project-container .projects-list .project-card .project-info {
+    /* border-top: 1px solid #abb2bf;
+    border-bottom: 1px solid #abb2bf; */
+    /* or */
+    border-block: 1px solid #abb2bf;
+    color: #abb2bf;
+    padding: 0.5rem;
+
+}
+
+/*** Project details info ***/
+
+#project-container .projects-list .info-box {
+    padding: 1rem;
+}
+
+#project-container .projects-list .info-box .project-text {
+    margin: 1rem 0;
+    color: #abb2bf;
+}
+
+#project-container .projects-list .actions {
+    display: flex;
+    gap: 1rem;
+}
+
+#project-container .projects-list .actions .project-link {
+    border: 1px solid #abb2bf;
+    padding: 0.3rem 1rem;
+    color: #abb2bf;
+    transition: all 0.4s;
+
+    &:hover {
+        background: rgba(171, 178, 191, 0.22);
+    }
+}
+
+#project-container .projects-list .actions .live {
+    color: white;
+    border-color: #c778dd;
+    transition: all 0.4s;
+
+    &:hover {
+        background: rgba(199, 120, 221, 0.213);
+    }
+}
+
