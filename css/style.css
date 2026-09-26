@@ -161,47 +161,11 @@
     margin-bottom: 7rem;
 }
 
-#project-container .title-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-
-#project-container .title-box .title {
-    display: flex;
-    position: relative;
-    font-size: 2rem;
-    font-weight: 400;
-
-}
-
-/*** purple line ***/
+/*** title styles in common.css ***/
 
 #project-container .title-box .title::after {
-    content: "";
     width: 400px;
-    height: 1px;
-    background: #c778dd;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 108%;
-
 }
-
-#project-container .title-box .title-hilight {
-    color: #c778dd;
-}
-
-#project-container .title-box .view-all {
-    transition: all 0.4s;
-}
-
-#project-container .title-box .view-all:hover {
-    color: #c778dd;
-}
-
 
 /***************** Project LIst *****************/
 
@@ -212,6 +176,7 @@
 
 #project-container .projects-list .project-card {
     border: 1px solid #abb2bf;
+    width: 80%;
 
 }
 
@@ -270,3 +235,45 @@
     }
 }
 
+/******************* Skills container Styles  *******************/
+
+#skills-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+/*** title styles in common.css ***/
+
+#skills-container .title-box .title::after {
+    width: 300px;
+}
+
+/*** skills list styles ***/
+#skills-container .skills-list {
+    display: flex;
+    gap: 1rem;
+}
+
+#skills-container .skills-list .skills-column {
+    width: 100%;
+}
+
+#skills-container .skills-list .skills-column .skills-box {
+    border: 1px solid #abb2bf;
+    margin-bottom: 1rem;
+}
+
+#skills-container .skills-list .skills-column .skills-box .box-header {
+    border-bottom: 1px solid #abb2bf;
+    padding: 0.5rem;
+}
+
+#skills-container .skills-list .skills-column .skills-box .box-content {
+    color: #abb2bf;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}

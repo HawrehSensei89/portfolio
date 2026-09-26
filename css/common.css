@@ -1,0 +1,40 @@
+/********** Section Styles ***********/
+.title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.title-box .title {
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+/*** purple line ***/
+
+.title-box .title::after {
+    content: "";
+    height: 1px;
+    background: #c778dd;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 108%;
+
+}
+
+.title-box .title-hilight {
+    color: #c778dd;
+}
+
+.title-box .view-all {
+    transition: all 0.4s;
+}
+
+.title-box .view-all:hover {
+    color: #c778dd;
+}
