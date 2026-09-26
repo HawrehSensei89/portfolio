@@ -277,3 +277,60 @@
     flex-wrap: wrap;
     padding: 0.5rem;
 }
+
+/****************************** about-me styles *******************************/
+
+#about-container {
+    width: 70%;
+    margin: 7rem auto;
+}
+
+#about-container .about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#about-container .about-wrapper .left-section {
+    width: 50%;
+}
+
+#about-container .about-wrapper .left-section .describtion {
+    color: #abb2bf;
+    margin-bottom: 2.5rem;
+}
+
+#about-container .about-wrapper .left-section .about-btn {
+    display: inline-block;
+    border: 1px solid #c778dd;
+    padding: 8px 12px;
+    margin-top: 2.4rem;
+    transition: all 0.4s;
+
+    &:hover {
+        background: rgba(199, 120, 221, 0.18);
+    }
+}
+
+#about-container .about-wrapper .right-section {
+    position: relative;
+    text-align: right;
+    width: 50%;
+    margin-top: -70px;
+}
+
+#about-container .about-wrapper .right-section .hawreh-img {
+    border-bottom: 1px solid #c778dd;
+}
+
+#about-container .about-wrapper .right-section .shape {
+    position: absolute;
+    right: 260px;
+    top: 60px;
+    z-index: -1;
+}
+
+/* title styles in common.css */
+#about-container .title-box .title::after {
+    width: 300px;
+}
