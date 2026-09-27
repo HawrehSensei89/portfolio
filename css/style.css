@@ -334,3 +334,58 @@
 #about-container .title-box .title::after {
     width: 300px;
 }
+
+/************************ contact me styles **************************/
+#contact-container {
+    width: 70%;
+    margin: 7rem auto;
+}
+
+#contact-container .contact-box {
+    display: flex;
+}
+
+#contact-container .contact-box .contact-section {
+    width: 50%;
+}
+
+#contact-container .contact-box .left-section .describtion {
+    margin-bottom: 2rem;
+    color: #abb2bf;
+}
+
+#contact-container .contact-box .right-section {
+    text-align: right;
+    align-self: flex-end;
+}
+
+#contact-container .contact-box .right-section .massage-box {
+    display: inline-block;
+    border: 1px solid #abb2bf;
+    padding: 1rem;
+    text-align: left;
+}
+
+#contact-container .contact-box .right-section .massage-title {
+    margin-bottom: 0.8rem;
+}
+
+#contact-container .contact-box .right-section .massage-box .social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#contact-container .contact-box .right-section  li a {
+    color: #abb2bf;
+    transition: all 0.4s; 
+
+    &:hover {
+        color: white;
+    }
+}
+
+/* title styles in common.css */
+#contact-container .title-box .title::after {
+    width: 300px;
+}
