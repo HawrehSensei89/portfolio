@@ -1,7 +1,7 @@
 /* Add fonts */
 @font-face {
     font-family: "fira code";
-    src: url("../assets/fonts/FiraCode-VariableFont_wght.ttf") format("TrueType");
+    src: url("/assets/fonts/FiraCode-VariableFont_wght.ttf") format("TrueType");
 }
 
 /* get font to body */
