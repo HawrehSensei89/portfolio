@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     background: #282c33;
     width: 100%;
 
@@ -47,7 +47,42 @@
 }
 
 
-/****** Banner Styles ******/
+/***************************** Fixed social icons  *****************************/
+
+#fixed-socials {
+    position: fixed;
+    z-index: 1000;
+    left: 30px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fixed-socials .social-line {
+    width: 1px;
+    height: 150px;
+    background: #abb2bf;
+    margin-bottom: 10px;
+}
+
+#fixed-socials .social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+#fixed-socials .social-list .social-link {
+    color: #abb2bf;
+    font-size: 1.3rem;
+    transition: color 0.6s;
+
+    &:hover {
+        color: white;
+    }
+}
+
+/************************* Banner Styles ******/
 
 #hawreh-banner {
     display: flex;
@@ -163,6 +198,7 @@
     margin: 0 auto;
     margin-top: 7rem;
     margin-bottom: 7rem;
+    position: relative;
 }
 
 /*** title styles in common.css ***/
@@ -229,6 +265,7 @@
     }
 }
 
+
 #project-container .projects-list .actions .live {
     color: white;
     border-color: #c778dd;
@@ -237,6 +274,14 @@
     &:hover {
         background: rgba(199, 120, 221, 0.213);
     }
+}
+
+/*** project shape styles ***/
+
+#project-container .projects-shape {
+    position: absolute;
+    left: -27%;
+    top: 50%;
 }
 
 /******************* Skills container Styles  *******************/
@@ -287,6 +332,7 @@
 #about-container {
     width: 70%;
     margin: 7rem auto;
+    position: relative;
 }
 
 #about-container .about-wrapper {
@@ -334,6 +380,16 @@
     z-index: -1;
 }
 
+/* about shape styles */
+#about-container .about-shape {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #abb2bf;
+    position: absolute;
+    right: -28%;
+    bottom: 80px;
+}
+
 /* title styles in common.css */
 #about-container .title-box .title::after {
     width: 300px;
@@ -343,6 +399,7 @@
 #contact-container {
     width: 70%;
     margin: 7rem auto;
+    position: relative;
 }
 
 #contact-container .contact-box {
@@ -388,6 +445,15 @@
         color: white;
     }
 }
+
+/*** contact shape styles ***/
+
+#contact-container .contacts-shape {
+    position: absolute;
+    left: -27%;
+    top: 50%;
+}
+
 
 /* title styles in common.css */
 #contact-container .title-box .title::after {
