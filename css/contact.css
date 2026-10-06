@@ -88,3 +88,69 @@ input:focus {
     font-size: smaller;
     cursor: pointer;
 }
+
+/* ================= Contact Page Responsive ================= */
+
+@media (max-width: 900px) {
+  #contact-container {
+    width: 88%;
+    padding-top: 5rem;
+  }
+
+  #contact-container .contact-box {
+    gap: 2rem;
+  }
+
+  #contact-container .contact-box .contact-section {
+    width: 50%;
+  }
+
+  input {
+    width: min(300px, 100%);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact-container {
+    width: 90%;
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+
+  #contact-container .title-box .title::after {
+    display: none;
+  }
+
+  #contact-container .contact-box {
+    flex-direction: column;
+  }
+
+  #contact-container .contact-box .contact-section {
+    width: 100%;
+  }
+
+  #contact-container .contact-box .right-section {
+    text-align: left;
+    align-self: auto;
+  }
+
+  #contact-container .contact-box .right-section .massage-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .input {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  #contact-container .contacts-shape {
+    display: none;
+  }
+}
