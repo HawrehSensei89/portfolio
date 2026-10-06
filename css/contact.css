@@ -1,121 +1,119 @@
-/************************ contact me styles **************************/
+/************************ Contact Page ************************/
+
 #contact-container {
-    width: 70%;
-    margin: 7rem auto;
-    position: relative;
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  position: relative;
 }
 
 #contact-container .contact-box {
-    display: flex;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
 }
 
-#contact-container .contact-box .contact-section {
-    width: 50%;
+#contact-container .contact-section {
+  width: 50%;
+  min-width: 0;
 }
 
-#contact-container .contact-box .left-section .describtion {
-    margin-bottom: 2rem;
-    color: #abb2bf;
+#contact-container .left-section .describtion {
+  margin-bottom: 2rem;
+  color: #abb2bf;
+  line-height: 1.8;
 }
 
-#contact-container .contact-box .right-section {
-    text-align: right;
-    align-self: flex-end;
+#contact-container .right-section {
+  text-align: right;
 }
 
-#contact-container .contact-box .right-section .massage-box {
-    display: inline-block;
-    border: 1px solid #abb2bf;
-    padding: 1rem;
-    text-align: left;
+#contact-container .massage-box {
+  display: inline-block;
+  max-width: 100%;
+  border: 1px solid #abb2bf;
+  padding: 1rem;
+  text-align: left;
 }
 
-#contact-container .contact-box .right-section .massage-title {
-    margin-bottom: 0.8rem;
+#contact-container .massage-title {
+  margin-bottom: 0.8rem;
 }
 
-#contact-container .contact-box .right-section .massage-box .social-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+#contact-container .massage-box .social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-#contact-container .contact-box .right-section li a {
-    color: #abb2bf;
-    transition: all 0.4s;
-
-    &:hover {
-        color: white;
-    }
+#contact-container .massage-box li a {
+  color: #abb2bf;
+  transition: color 0.3s;
 }
 
-/*** contact shape styles ***/
+#contact-container .massage-box li a:hover {
+  color: #fff;
+}
 
 #contact-container .contacts-shape {
-    position: absolute;
-    left: -27%;
-    top: 50%;
+  position: absolute;
+  left: -10rem;
+  top: 50%;
+  max-width: 140px;
+  pointer-events: none;
 }
 
-
-/* title styles in common.css */
 #contact-container .title-box .title::after {
-    width: 300px;
+  width: 300px;
 }
 
-.input {
-    position: relative;
-    display: inline-block;
+#contact-container .input {
+  position: relative;
+  width: min(400px, 100%);
+  margin-top: 2rem;
 }
 
-input {
-    background: #282c33;
-    outline: none;
-    border:1px solid #424446;
-    width: 300px;
-    height: 2rem;
-    padding: 1rem 0.6rem;
+#contact-container .input input {
+  display: block;
+  width: 100%;
+  height: 2.8rem;
+  padding: 0.7rem 2.5rem 0.7rem 0.8rem;
+  background: #282c33;
+  color: #fff;
+  outline: none;
+  border: 1px solid #424446;
 }
 
-input:focus {
-    border-color: #abb2bf;
+#contact-container .input input:focus {
+  border-color: #abb2bf;
 }
 
-.icon {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: smaller;
-    cursor: pointer;
+#contact-container .input .icon {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  pointer-events: none;
 }
-
-/* ================= Contact Page Responsive ================= */
 
 @media (max-width: 900px) {
   #contact-container {
     width: 88%;
-    padding-top: 5rem;
+    padding-top: 7rem;
   }
 
   #contact-container .contact-box {
     gap: 2rem;
-  }
-
-  #contact-container .contact-box .contact-section {
-    width: 50%;
-  }
-
-  input {
-    width: min(300px, 100%);
-    max-width: 100%;
   }
 }
 
 @media (max-width: 600px) {
   #contact-container {
     width: 90%;
-    padding-top: 2rem;
-    margin-top: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
   }
 
   #contact-container .title-box .title::after {
@@ -124,30 +122,25 @@ input:focus {
 
   #contact-container .contact-box {
     flex-direction: column;
+    gap: 1.5rem;
   }
 
-  #contact-container .contact-box .contact-section {
+  #contact-container .contact-section {
     width: 100%;
   }
 
-  #contact-container .contact-box .right-section {
+  #contact-container .right-section {
     text-align: left;
-    align-self: auto;
   }
 
-  #contact-container .contact-box .right-section .massage-box {
+  #contact-container .massage-box {
+    display: block;
     width: 100%;
-    box-sizing: border-box;
   }
 
-  .input {
+  #contact-container .input {
     width: 100%;
-    margin-top: 1rem;
-  }
-
-  input {
-    box-sizing: border-box;
-    width: 100%;
+    margin-top: 1.5rem;
   }
 
   #contact-container .contacts-shape {
