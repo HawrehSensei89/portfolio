@@ -485,3 +485,206 @@
     color: white;
     text-decoration: underline;
 }
+
+/* ================= Home Responsive ================= */
+
+@media (max-width: 900px) {
+  #hawreh-banner {
+    width: 88%;
+    height: auto;
+    min-height: 90vh;
+    padding-top: 4rem;
+    gap: 1rem;
+  }
+
+  #hawreh-banner .left-section .banner-title {
+    font-size: 2rem;
+  }
+
+  #hawreh-banner .right-section .banner-img {
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
+  }
+
+  #project-container,
+  #skills-container,
+  #about-container,
+  #contact-container {
+    width: 88%;
+  }
+
+  #project-container .projects-list {
+    flex-wrap: wrap;
+  }
+
+  #project-container .projects-list .project-card {
+    width: calc(50% - 5px);
+  }
+
+  #skills-container .skills-list {
+    flex-wrap: wrap;
+  }
+
+  #skills-container .skills-list .skills-column {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+@media (max-width: 600px) {
+  #hawreh-banner {
+    width: 90%;
+    min-height: auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  #hawreh-banner .left-section .banner-title {
+    font-size: clamp(1.7rem, 8vw, 2.2rem);
+  }
+
+  #hawreh-banner .left-section .banner-text {
+    font-size: 1rem;
+    margin: 1.3rem 0;
+  }
+
+  #hawreh-banner .right-section {
+    margin-top: 2rem;
+  }
+
+  #hawreh-banner .right-section .banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: contain;
+  }
+
+  #hawreh-banner .right-section .banner-occupation {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    top: -10px;
+  }
+
+  #hawreh-banner .right-section .banner-shape {
+    width: 100px;
+    top: 80px;
+    right: 10px;
+  }
+
+  #slogan-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #slogan-container .slogan-box {
+    max-width: 100%;
+    padding: 1rem 1.5rem;
+  }
+
+  #slogan-container .slogan-box h3 {
+    font-size: 1rem;
+  }
+
+  #project-container,
+  #skills-container,
+  #about-container,
+  #contact-container {
+    width: 90%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .title-box {
+    gap: 1rem;
+  }
+
+  .title-box .title {
+    font-size: 1.5rem;
+  }
+
+  .title-box .view-all {
+    font-size: 0.8rem;
+  }
+
+  #project-container .title-box .title::after,
+  #skills-container .title-box .title::after,
+  #about-container .title-box .title::after,
+  #contact-container .title-box .title::after {
+    display: none;
+  }
+
+  #project-container .projects-list {
+    flex-direction: column;
+  }
+
+  #project-container .projects-list .project-card {
+    width: 100%;
+  }
+
+  #project-container .projects-list .project-img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  #project-container .projects-list .actions {
+    flex-wrap: wrap;
+  }
+
+  #project-container .projects-shape,
+  #about-container .about-shape,
+  #contact-container .contacts-shape {
+    display: none;
+  }
+
+  #skills-container .skills-list {
+    flex-direction: column;
+  }
+
+  #skills-container .skills-list .skills-column {
+    width: 100%;
+  }
+
+  #about-container .about-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #about-container .about-wrapper .left-section,
+  #about-container .about-wrapper .right-section {
+    width: 100%;
+  }
+
+  #about-container .about-wrapper .right-section {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  #about-container .about-wrapper .right-section .hawreh-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #about-container .about-wrapper .right-section .shape {
+    display: none;
+  }
+
+  #contact-container .contact-box {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #contact-container .contact-box .contact-section {
+    width: 100%;
+  }
+
+  #contact-container .contact-box .right-section {
+    text-align: left;
+  }
+
+  #contact-container .contact-box .left-section .describtion {
+    line-height: 1.7;
+  }
+}
