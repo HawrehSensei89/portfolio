@@ -98,3 +98,55 @@
     margin-top: 0;
     margin-bottom: 1.7rem;
 }
+
+/* ================= Projects Page Responsive ================= */
+
+@media (max-width: 900px) {
+  #project-container {
+    width: 88%;
+    padding-top: 5rem;
+  }
+
+  #project-container .projects-list {
+    justify-content: center;
+  }
+
+  #project-container .projects-list .project-card {
+    width: calc(50% - 5px);
+  }
+}
+
+@media (max-width: 600px) {
+  #project-container {
+    width: 90%;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  #project-container .title-box .title::after {
+    display: none;
+  }
+
+  #project-container .projects-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #project-container .projects-list .project-card {
+    width: 100%;
+  }
+
+  #project-container .projects-list .project-img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  #project-container .projects-list .actions {
+    flex-wrap: wrap;
+  }
+
+  #project-container .projects-shape {
+    display: none;
+  }
+}
